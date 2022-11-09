@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css display property</title>
+    <style>
+        /* issey hamarey items centerho jayegey margin auto karna padega, alignment setkarney mey use hota hai  */
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+
+            border: 2px solid red;
+            margin: auto;
+            width: 920px;
+        }
+
+        img {
+            margin: auto;
+/* display blok karney sey inline ho gaya tou img center mey aa gai */
+            display: block;
+            width: 100px;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .box {
+            border: 4px solid black;
+            background-color: gray;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            box-sizing: border-box;
+            /* display: block; */
+            /* display inline karney sey data 1 line mey set hota hai */
+            display: inline-block;
+        }
+
+        .container {
+            margin: auto;
+            width: 920px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://www.codewithharry.com/img/logo-blue.png" alt="img1">
+        <h3>This is mamta's blog</h3>
+
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading" Heading></h4>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi fugit soluta doloremque
+                cumque iusto molestias esse saepe cum veritatis. Aut alias sunt dicta voluptates veniam, tempora sed
+                totam nulla. </p>
+        </div>
+        <div class="box">
+            <h4 class="heading" Heading></h4>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi fugit soluta doloremque
+                cumque iusto molestias esse saepe cum veritatis. Aut alias sunt dicta voluptates veniam, tempora sed
+                totam nulla. </p>
+        </div>
+        <div class="box">
+            <h4 class="heading" Heading></h4>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum excepturi fugit soluta doloremque
+                cumque iusto molestias esse saepe cum veritatis. Aut alias sunt dicta voluptates veniam, tempora sed
+                totam nulla. </p>
+        </div>
+    </div>
+</body>
+
+</html>

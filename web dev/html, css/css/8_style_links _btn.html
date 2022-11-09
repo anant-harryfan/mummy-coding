@@ -1,0 +1,67 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoSelector & design</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            background-color: rgb(192, 240, 145);
+            margin: 34px auto;
+            padding: 34px;
+            width: 666px;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* hum jis par hover kartey hai uski vo sab property change ho jayegi jo hum detey hai */
+        a:hover {
+            background-color: rgb(28, 43, 28);
+        }
+
+        /* agar user is tag pe activeness dikhata hai to uski property change kardo */
+        a:active {
+            background-color: darkblue;
+        }
+
+        /* 1 bar visit kar liya hai to tag ki css property change kar do*/
+        a:visited {
+            color: wheat;
+        }
+
+        .btn {
+            background-color: crimson;
+            padding: 6px;
+            /* border none sey default border bhi nahi rahegi */
+            border: none;
+            /* cursor ko haath bana deta hai */
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 4px;
+
+        }
+        .btn:hover{
+            background-color: rgb(149, 109, 10);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dignissimos voluptatem amet dolor ipsum facilis
+            dolorum debitis error laborum dicta tempora repudiandae in maiores porro quae, ratione odit voluptate
+            quibusdam!</p>
+        <a href="https://www.codewithharry.com/videos/web-development-in-hindi-100/" class="btn">read more</a>
+        <!-- button.btn likhney sey pura tag likha aaya  -->
+        <button class="btn">contact us</button>
+    </div>
+</body>
+
+</html>

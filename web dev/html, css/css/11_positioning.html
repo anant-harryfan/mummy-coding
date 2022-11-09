@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positioning</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            background-color: khaki;
+
+            /* container ki height badaney sey scroll karke dekh sakteyhai box ki positions */
+            height: 3444px;
+        }
+
+        /* css position: static(default), absolute, relative, fixed, sticky */
+        .box {
+            /* boxes aaju baju mey aa gaye */
+            display: inline-block;
+            border: 2px solid red;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+
+        }
+
+        #box3 {
+            /* relative : relative to it normal position and will leave gap to its normal position*/
+            /* position: relative */
+
+            /* absolute: relative to the position of its first parent yaane container iska parent hai   */
+            /* position: absolute; */
+
+            /* top:34px;
+            left:134px; */
+
+            /* fixed: position the element relative to he brouswer window */
+            /* position:fixed;
+            right: 4px; */
+            /* bottom: 2px; */
+
+            /* sticky: scroll karney sey vo box vahi stick ho kar rah jayega  */
+            /* position: sticky; */
+            top: 3px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!--div.box#box*4 aisa likhney sey 4 box with class id aa gaye -->
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3 chat with us</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+    <style>
+        .box {
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        /* media mey min. aur max width dekey hum responsive ness set kar aktey hai apney instrument keyhisab sey */
+        /* min.width jitni degey utni width inspect mey hum karegey tab hi vo live server mey dikhega */
+        
+        @media (max-width: 300px) {
+            #box1 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media (min-width: 300px) and (max-width: 500px) {
+            #box2 {
+                display: block;
+                background-color: teal;
+            }
+
+            /* maxwidth jitni degey vo 0 sey start hogi  */
+        }
+
+        @media (min-width: 500px) and (max-width: 800px) {
+            #box3 {
+                /* media dalney ka matlab hai ki yadi usmey di with match hogi tou aagey jo diya hai vo css laagu ho jaaye */
+                display: block;
+                background-color: grey;
+            }
+        }
+
+        @media (min-width: 800px) {
+            #box4 {
+                display: block;
+                background-color: rgb(15, 121, 121);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">mai ek iphone hoon</div>
+    <div class="box" id="box2">mai ek tablet hoon</div>
+    <div class="box" id="box3">mai ek computer hoon</div>
+    <div class="box" id="box4">mai ek widescreen computer hoon</div>
+    
+</body>
+
+</html>

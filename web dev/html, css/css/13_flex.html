@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        .container {
+            /* h344 sey direct aa agaya
+    w100% deney sey width aa gai */
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            /* display flex deney sey aaju baju mey aa gayey */
+            display: flex;
+            /* flex properties for flex container */
+            /* default is row */
+            /* jo value baad mey detey hai vo overright ho jati hai */
+
+            flex-direction: row;
+            /* flex-direction: column;
+            reverse mey right to left aayegey box
+            flex-direction: row-reverse;
+            reverse mey neechey seyuper aayegey column
+          flex-direction: column-reverse; */
+
+            /* wrap deney sey responsive key hisab sey set hney lagtey hai box */
+            /* by default no wrap hota hai */
+            flex-wrap: wrap;
+
+            /* reverse sey oppsite sie sey reverse hogey */
+            /* flex-wrap: wrap-reverse; */
+
+            /* ismey dono properties saath mey likh saktey hai */
+            /* flex-flow:row-reverse wrap; shorthand for directin and flex wrap */
+
+            /* flex ki alignment horizontaly */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content:space-evenly; */
+            /* justify-content: space-around; */
+
+            /* verticaly alignment ho gaye items matlab box */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            align-items: stretch;
+
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1 {
+            /* flex properties for flex item */
+            /* order no. bada hoga tou vo baad mey aayega */
+            order: 2;
+
+ /* grow sey badega box shrink sey chhota hoga jab hum responsive key liye dekhegey tab */
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+        }
+
+        #item-2 {
+            flex-basis: 320px;
+            /* flex-grow: 2; */
+            flex-shrink: 2;
+            order: 1;
+
+           /* when flex direction is set */
+        }
+
+
+        #item-3 { 
+            order: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is flexbox</h1>
+
+    <div class="container">
+        <div class="item" id="item-1">first box</div>
+        <div class="item" id="item-2">second box</div>
+        <div class="item" id="item-3">third box</div>
+        <!-- <div class="item" id="item-4">fourth box</div> -->
+        <!-- <div class="item" id="item-5">fifth box</div> -->
+        <!-- <div class="item" id="item-6">sixth box</div> -->
+
+    </div>
+</body>
+
+</html>

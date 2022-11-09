@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid intro</title>
+    <style>
+        .container {
+            /* display grid deney sey jo container tha vo ek grid ban gaya */
+            display: grid;
+            /* jo hamarey box hai unko columns key hisab sey devide karta hai */    
+            /* yeh tin value sey tin column bana dega*/
+            /* grid-template-columns: 300px 100px 100px; */
+            
+            /* values mey auto dena matlab jo aajubaju ki valuee hai uskey hisab sey adjust ho jaye */
+            /* grid-template-columns: 300px 200px auto 500px; */
+
+            /* fr matlab jo screen ki width hai uska matlab 100 perceent ka 1 bhaag 4 bhaag aisa */
+            /* grid-template-columns: 1fr 4fr 1fr ; */
+            /* abhi uper wale me dikat ye hai ki agar bhhot sare coloum banane pade to bar bar grid-template-coloums wala command likhna padega */
+            
+            /* repeat command sey ek saath bahot saarey column ko handle kar payegey*/
+            /* ismey 3 yaaney 3 column  */
+            grid-template-columns: repeat(3, auto);
+            /* auto matlab ye */
+            /* grid-template-columns: auto auto auto ;  */
+
+            /* issey margin jaisa kuch adjust kar sakte hai */
+            grid-row-gap: 3rem;
+            grid-column-gap: 3rem;
+        }
+        .item{
+            height: 100px;
+            /* width: 100PX; */
+            background-color:darkslategray;
+            /* margin: 3px; */
+            padding: 3px;
+            color: wheat;
+            border: 3px solid burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- display grid karney sey yeh sab griditems kahlayegey -->
+        <div class="item">This is item-1</div>
+        <div class="item">This is item-2</div>
+        <div class="item">This is item-3</div>
+        <div class="item">This is item-4</div>
+        <div class="item">This is item-5</div>
+        <div class="item">This is item-6</div>
+        <div class="item">This is item-7</div>
+        <div class="item">This is item-8</div>
+        <div class="item">This is item-9</div>
+    </div>
+</body>
+
+</html>

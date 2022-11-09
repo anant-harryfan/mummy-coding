@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>borders and bg</title>
+</head>
+<style>
+    #firstpara {
+        color: rgb(36, 202, 202);
+        background-color: rgb(166, 157, 157);
+        height: 60px;
+        width: 200px;
+        border-width: 4px;
+        border-left: 4px green;
+        border-right: 6px yellow;
+        border-style: solid;
+        /* border-width: 4px;
+            border-color: green;
+            border-style: solid;  */
+        
+        border-radius: 12px;
+        /*box key corner round ho jayegey  */
+    }
+
+    #border {
+        color: rgb(187, 187, 33);
+        background-color: blue;
+        border-radius: 5px;
+    }
+
+    #thirdPara {
+        height: 300px;
+        width: 350px;
+        /* syntax: url ke ander img ki link */
+        background-image: url('https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcodewithharry.nyc3.cdn.digitaloceanspaces.com%2Fassets%2Fe1c843acc10c59c60504cd438a082c6d.png&w=384&q=75');
+        /* sare text ki position text-align se decide kar sakte */
+        text-align: center;
+        /* border: border-size border-style border-color */
+        border: 2px solid red;
+        /* background me img vagera repeat ho ya na ho isse decide kar sakte */
+        /* repeat-x and repeat-y will make it repeat on x and y axis */
+        background-repeat: no-repeat;
+
+        /* background postion decide karne me madat karta */
+        /* background-position: 192px 34px; */
+        background-position: center center;
+        /* background-position: bottom right; */
+        /* background-position: top center; */
+    }
+    .headi{
+        /* text ko center kar deta */
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h4 class="headi">borders and bg</h4>
+    <p id="firstpara">this is firstpara</p>
+    <h5 class="headi">border</h5>
+    <p id="border">here is border</p>
+
+    <h3 class="headi">This is third heading</h3>
+    <p id="thirdPara">This is my third paragraph</p>
+</body>
+
+</html>

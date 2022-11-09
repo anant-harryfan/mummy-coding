@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>attribute and nth child pseudo selectors</title>
+  <style>
+    .container {
+      display: block;
+      width: 233px;
+      margin: auto;
+    }
+
+    input {
+      display: block;
+    }
+
+    input[type="text"] {
+      border: 2px solid red;
+    }
+
+    a[target]{
+      font-size: 44px;
+      color: blueviolet;
+    }
+    a[target="__self"]{
+      font-size: 24px;
+      color: violet;
+    }
+    /* aisey kisi bhi input type ko hum alag sey css dey saktey hai */
+    input[type=email]{
+      color: yellow;
+      border: 4px solid black;
+    }
+    /* jitney li diye hai usmeyjo number key liye n-th child dalegey us line ki css change hogi */
+    li:nth-child(3){
+      color: cyan;
+    }
+    /* 2n+0 matlab hardusri line */
+    li:nth-child(2n+0){
+      color: red;}
+
+    li:nth-child(odd){
+      background-color:yellow;}
+
+    li:nth-child(even){
+      background-color:greenyellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- target deney sey anchor tab new tab mey khulega -->
+    <h1><a href="https://www.google.com/" target="_blank">go to google</a></h1>
+    <h1><a href="https://www.facebook.com/" target="__self">go to facebook</a></h1>
+
+    <form action="" class=form-control">
+      <input type="text" placeholder="enter your name">
+      <input type="email" placeholder="enter your email">
+      <input type="password" placeholder="enter your password ">
+      <input type="submit" value="submit">
+
+    </form>
+    <ul>
+      <li class="item" id="item-1">Item1</li>
+      <li class="item" id="item-2">Item2</li>
+      <li class="item" id="item-3">Item3</li>
+      <li class="item" id="item-4">Item4</li>
+      <li class="item" id="item-5">Item5</li>
+      <li class="item" id="item-6">Item6</li>
+      <li class="item" id="item-7">Item7</li>
+      <li class="item" id="item-8">Item8</li>
+      <li class="item" id="item-9">Item9</li>
+      <li class="item" id="item-10">Item10</li>
+    </ul>
+  </div>
+</body>
+
+</html>

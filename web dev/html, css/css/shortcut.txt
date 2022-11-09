@@ -1,0 +1,59 @@
+vscode ME
+CTRL+C, CTRL+V = COPY, PASTE
+
+CTRL+A = SELECT ALL (jabh puri file ka jitna text hai sabko copy karna ho)
+
+CTRL+D = REPLICATE SELECTED PORTION(line copy karke nichhe chala jaega)
+
+CTRL+BACKSPACE = PURA PURA WORD EK SATH DLT HOGA
+
+SHIFT+ENTER = ADD LINE BELOW (ek line niche bana deta jabh kabhi kisi code ke beech me ho or waha se nae line leni ho)
+
+CTRL+SHIFT+ENTER = ADD LINE ABOVE(phele jaisa hai bas uper line enter kar deta)
+
+ALT + CURSOR_CLICK = MULTIPLE CURSOR(ek hi time pe bhhot jagaha cursor. kahi se cursor hatana ho to alt dabake us jagaha wale cursor pe click kardo)
+
+CTRL+Z = UNDO
+
+CTRL+Y = REDO
+
+F2 = TO RENAME A FILE (kisi file me click karo or f2 dabao rename karne ke liye)
+
+ALT DOWNARROW/UPPERARROW = LINE UPER NICHE CHALI JAEGI
+VS CODE ME left side me sabse niche dekho settings milegi. usko click karke usme ek option hai keyboard shortcut. usme click karke jo shortcut apko chahiye usko search mar lo (bas vs code ke liye)
+
+WINDOWS KE SHORTCUT
+
+ALT+TAB = 2 WINDOW KE BEECH NAVIGATE KARNA
+
+WINDOWS+D = TO MINIMIZE ALL TAB
+
+GOOGLE ME:
+
+CTRL + ANY NUMBER(1,2,3,4,5,6,7,8,9 TAK) = JIS NUMBER PE CLICK KAROGE USS NUMBER KI TAB PE CHALE JAOGE
+
+CTRL + TAB = JO PHICHLA WEBSITE PE THE AAP USPE CHALA JAEGE VAPIS IS KE USE SE
+
+CTRL+T = NEW TAB OPEN KARNE KE LIYE
+
+CTRL+F = KUCH BHI PAGE PE SEARCH KARNA HO TO like - serch karna ho coding to ctrl +f dabao ek bar aayega uper usme jo serch karna hai vo word type kardo like here coding to sarewords aajenge. (2 arrow honge baju me usse jaha jaha word aaraha hai waha waha jump kar sakte ho)
+
+YOUTUBE shortcut:
+
+SPACEBAR = TO PLAY/PAUSE VIDEO
+
+SHIFT + >(SMALLER THAN) = TO INCREASE SPEED OF VIDEO
+
+SHIFT + <(GREATER THAN) = TO DECREASE SPEED OF VIDEO
+
+L = 10 SEC AGGE BADANA
+
+J = 10 SEC PICHHE
+
+UPPER ARROW = TO INCREASE VOLUME
+
+LOWER ARROW = TO DECREASE VOLUME
+
+F = FULL SCREEN
+
+T = THEATER MODE (JO APKO ZAYDATAR CHAHIYE RAHATA)

@@ -1,0 +1,133 @@
+/* css reset */
+/* css repeat karney sey default values chali jaati hai fir hamarey hisab seysetting kar saktey hai margin vagerey ki */
+body {
+    font-family: 'Baloo Thambi 2', cursive;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    color: rgb(232, 223, 223);
+    margin: 0;
+    padding: 0;
+    background: url('img1.jpg');
+    /* img 1 hi aayegi */
+    background-repeat: no-repeat;
+    /* 100% deney sey pura background cover ho jata hai */
+    background-size: 100%;
+}
+
+.left {
+    display: inline-block;
+    /* border: 2px solid gray; */
+    background-color: black;
+    /* absolute deney sey jo hamney left aur top setting dihai uskey hisab sey setting hogi */
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    text-align: center;
+
+}
+
+/* hover dena matlab mousepointer kisi element pey jaata hai tou vo jo hum degey vaisa change hoga */
+.left:hover {
+    /* isse color pura opposit ho jata hai */
+    filter: invert(100%);
+}
+
+.left img {
+    width: 6rem;
+    /*  */
+    filter: invert(100%);
+}
+
+/* .left img:hover{
+        filter: invert(0%);
+    } */
+.left div:hover {
+    /* text-align: center; */
+}
+
+.mid {
+    display: block;
+    width: 53%;
+    text-align: center;
+    margin: 18px auto;
+    /* border: 2px solid rgb(2, 10, 2); */
+    background-color: green;
+
+}
+
+.right {
+
+    display: inline-block;
+    /* border: 2px solid yellow; */
+    /* background-color: green; */
+    position: absolute;
+    right: 34px;
+    top: 20px;
+}
+
+.navbar {
+    display: inline-block;
+    padding: 0;
+
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 1.2rem;
+}
+
+.navbar li a:hover {
+
+    text-decoration: underline;
+    color: rgb(137, 31, 31);
+}
+
+.btn {
+    margin: 0px 9px;
+    background-color: black;
+    color: rgb(219, 207, 207);
+    padding: 3px 4px;
+    /* border: 2px solid gray; */
+    font-size: 20px;
+    border-radius: 10px;
+    /* cursor arrow sey haath mey change ho gaya */
+    cursor: pointer;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+.container {
+    border: 4px solid gray;
+    margin: 100px 85px;
+    padding: 31px 12px;
+    width: 30%;
+    border-radius: 8px;
+    color: #000;
+    text-align: center;
+}
+/* container key ander ki button key liye */
+.container .btn{
+ width: 70%;
+}    
+.form input {
+    width: 20rem;
+    margin: 0.5rem auto;
+    text-align: center;
+    display: block;
+    /* border: 2px solid black;  */
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Baloo Thambi 2', cursive;
+   
+
+    }
+  

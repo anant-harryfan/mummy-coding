@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables and custom property</title>
+
+    <style>
+        /* ismey root mey hum alag alag variables matlab var decide karte hai fir aagey vo hum kahi bhi multiple use kar saktey hai */
+        :root {
+            --primary-color: blue;
+            --danger-color: red;
+            --maxw: 333px; 
+
+            /* yaha haumney black color ko anant naam ka variable deydiya hai ab jaha hum var key bracket mey anant likhegeytou black color ley lega */
+
+            --anant: black;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: var(--anant);
+            border: 2px solid var(--primary-color);
+            /* box-shadow: 3px 3px var(--box-color); */
+            margin: 2px 9px;
+        }
+
+        .container {
+            max-width: var(--maxw);
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--danger-color);
+        }
+    </style>
+</head>
+<html>
+
+
+</html>
+
+<body>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

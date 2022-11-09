@@ -1,0 +1,72 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        /*  navbar ko select kiya */
+        .navbar {
+            /* bg aur radius diya */
+            background-color: rgb(104, 31, 31);
+            border-radius: 14px;
+        }
+        /* navbar class key ander key ul ko select kiya */
+        .navbar ul {
+            /* upar neechey ka text adjust hota hai */
+            overflow: auto;
+        }
+        /* navbar class key ander key li ko select kiya */
+        .navbar li {
+            /* float sey jaha chahey vaha data ley jao */
+            float:left;
+            /* bullet hat gae isse */
+            list-style: none;
+            margin: 13px 20px;
+        }
+        /* direct navbarkey ander li key ander anchor tag mey gaye */
+        .navbar li a {
+            padding: 3px 3px;
+            /* underline hat gayi */
+            text-decoration: none;
+            color: wheat;
+        }
+        /* hover matlab us element pey mouse ley jaye tou jo hum degey vo setting ho jayegi */
+        .navbar li a:hover {
+            color: rgb(245, 169, 29);
+        }
+
+        .search {
+            padding: 5px 75px;
+            float: right;
+            color: wheat;
+        }
+        
+        .navbar input{
+            padding: 7px 15px;
+            border-radius: 14px;
+            border: 2px solid black;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="#">Home</a> </li>
+                <li> <a href="#">About</a> </li>
+                <li> <a href="#">Contact us</a> </li>
+                <li> <a href="#">Services</a> </li>
+                <div class="search">
+                    <!-- isse se search box banaya aur usme placeholder dala -->
+                    <input type="text" id="search" name="search" placeholder="Search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

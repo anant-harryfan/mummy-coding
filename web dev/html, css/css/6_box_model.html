@@ -1,0 +1,75 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model</title>
+    <style>
+        /* universal selector: sare tago ko select kar leta */
+        * {
+            box-sizing: border-box;
+            /* border: 10px solid red; */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* select kar liya container ko */
+        .container {
+            /* backgroud color de diya */
+            background-color: burlywood;
+            /* border dene ko kam aata: size, style, color */
+            border: 3px solid rgb(19, 24, 182);
+            /* border ander se gap deta */
+            /* padding: 20px; */
+            /* pl150 se pura aagaya */
+            /* padding-left: 150px;
+    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-right: 200px;  */
+
+            /* ek saath 4ro ki padding set hogi */
+            /* padding: top right bottom left*/
+            /* padding: 100px 200px 50px 20px; */
+
+            /* padding: top/bottom left/right */
+            /*         x    y */
+            padding: 28px 36px;
+
+            /* boarder ke bhahar se gap deta */
+            /* margin me bhi padding jaisa hota hai top bottom sabh kuch jo likha hai */
+            margin: 14px 13px;
+            /* border key cone badlata hai */
+            border-radius: 24px;
+            width: 534px;
+            /* margin or padding ke effect ko hata deta or box ki sizing fix ho jati hai */
+            /* box-sizing: border-box; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container se div pura aagaya -->
+    <div class="container">
+        <h3>this is my heading</h3>
+        <!-- p#first - kiyato ye aaya -->
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt dolore, aliquid provident
+            debitis necessitatibus accusantium officiis fugit unde eaque assumenda porro deleniti, harum minus quasi!
+        </p>
+        <!-- ctrl d se replicate kiya -->
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt dolore, aliquid provident
+            debitis necessitatibus accusantium officiis fugit unde eaque assumenda porro deleniti, harum minus quasi!
+        </p>
+    </div>
+    <div class="container">
+        <h3>this is my heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt dolore, aliquid provident
+            debitis necessitatibus accusantium officiis fugit unde eaque assumenda porro deleniti, harum minus quasi!
+        </p>
+    </div>
+</body>
+
+</html>

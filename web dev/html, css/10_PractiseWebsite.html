@@ -1,0 +1,143 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Website</title>
+
+    <style>
+        html{
+            font-size:2rem;
+        }
+        h3 {
+            font-family: Verdana;
+            color: red;
+            text-align: center;
+        }
+
+        #form {
+            background-color: green;
+
+            background-image: url('https://www.codewithharry.com/_next/image/?url=https%3A%2F%2Fcodewithharry.nyc3.cdn.digitaloceanspaces.com%2Fassets%2Fe1c843acc10c59c60504cd438a082c6d.png&w=384&q=75');
+            background-repeat: no-repeat;
+            background-position: center;
+            text-align: center;
+        }
+
+        .frm {
+            background-color: yellow;
+        }
+
+        input {
+            border-radius: 10px;
+            background-color: burlywood;
+        }
+
+        .cen {
+            align-items: center;
+            text-align: center;
+            list-style-position: outside;
+        }
+
+        footer {
+            text-align: center;
+            color: red;
+            font-size:20px;
+        }
+
+        .t {
+            color: blue;
+        }
+
+        .ct {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- header footer list meyforms summery details ka use karna hai -->
+    <header>
+        <h3>It is my first Website</h3>
+    </header>
+    <ul class="anything, cen">
+        <!-- form -->
+        <li>
+            <!-- Drop down menu form -->
+            <details class="cen">
+                <summary>Form</summary>
+                <form action="backend.php" id="form">
+                    <label for="Name" class="frm">Name</label>
+                    <div>
+                        <input type="text" Name="MyName" id="Name">
+                    </div><br>
+
+                    <label for="Role" class="frm">Role</label>
+                    <div>
+                        <input type="text" Name="MyRole" id="Role">
+                    </div><br>
+
+                    <label for="Email" class="frm">Email</label>
+                    <div>
+                        <input type="Email" Name="MyEmail" id="Email">
+                    </div><br>
+
+                    <label for="car" class="frm">car</label>
+                    <select name="my car" id="car">
+                        <option value="ind">indica</option>
+                        <option value="swf">swift</option>
+                    </select>
+                    </div><br><br>
+
+                    <div>
+                        <!-- input type submitsey submit box aata hai -->
+                        <input type="submit" value="submit now">
+                        <!-- reset sey reset box aata hai -->
+                        <input type="reset" value="reset now">
+
+                    </div><br>
+
+
+                </form>
+
+                <!-- <img src="img.png" alt=""> -->
+            </details>
+        </li>
+        <!-- table -->
+        <li>
+            <!-- Drop down menu Table -->
+            <details>
+                <summary>
+                    <a href="https://www.codewithharry.com">Table</a>
+                </summary>
+                <table class="ct">
+
+                    <thead class="t">
+                        <tr class="t">
+                            <th>Name</th>
+                            <th colspan="2">Salery</th>
+                        </tr>
+                    </thead>
+                    <tbody class="t">
+                        <tr>
+                            <td>Vaibhav</td>
+                            <td>7000</td>
+                        </tr>
+                        <tr>
+                            <td>Saransh</td>
+                            <td>7000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+        </li>
+
+    </ul>
+    <footer>Complete work</footer>
+</body>
+
+</html>

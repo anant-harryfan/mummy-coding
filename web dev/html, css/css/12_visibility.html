@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility&z-index</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+
+        #box1 {position: relative;
+            top: 49px;
+            background-color: green;
+            z-index: -35;
+        }
+        
+        /* hidden deney sey vo content nahi dikhega par uski jagah rahti hai */
+        /* display none sey jo visibility hidden mey jagah vo cover karta hai vo chali jayegi */
+        #box2 {
+            position: relative;
+            top: 14px;
+            z-index: 165;
+            /* jiska z-index bada hoga vo overlap hoga */
+            /* z-index mey hum box kaunsa upar dikhana hai kaunsa peechey yeh property set kartey hai*/
+            /*z-index:will work only for position: relative,absolute, fixedand sticky;*/
+            display: none;
+            visibility: hidden;
+            background-color: red;
+        }
+
+        #box3 {
+            background-color: blue;
+        }
+
+        #box4 {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- div.box#box$*4 aisa karney sey class id key saath 4 box ka content aagaya aur 1 2 3 4 box pey no. bhi aa gaye  -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+
+</html>

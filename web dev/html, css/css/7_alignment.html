@@ -1,0 +1,113 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(194, 119, 194);
+            background-color: rgb(149, 148, 230);
+            /* top/bottom left/right me same px le leta auto. chheze center karne me madat karta */
+            margin: 45px auto;
+        }
+
+        /* .para {
+
+        } */
+
+        .item {
+            border: 3px solid gray;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background: rgb(245, 190, 190);
+
+        }
+
+        #fruit {
+            /* pure fruit box ko left me le gaya jiski width 50% hai */
+            float: left;
+            width: 48%;
+        }
+
+        #comp {
+            float: right;
+            width: 48%;
+        }
+
+        #stationary {
+            /* float: left; */
+            /* iska matlab koi bhi flot left wala eliment mujhe tang na kare */
+            /* clear:left; */
+
+            /* iska matlab dono side ke float pareshanna kare */
+            clear: both;
+            width: 50%+50%;
+        }
+
+        p {
+            text-align: justify;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .container sey div pura aa gaya -->
+    <div class="container">
+        <h3> Welcome to my store </h3>
+        <!-- #fruit.item sey id class dono dedi -->
+        <div id="fruit" class="item">
+            <h3>fruit</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sed eaque
+                esse fugit odit animi minus aspernatur quod impedit odio minima in aliquam maiores facere ratione earum
+                voluptatem unde alias tempora! Voluptatem, laboriosam mollitia. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Quis eos dicta cupiditate nihil reiciendis quos! Cupiditate cum quam numquam
+                voluptatibus saepe optio fugiat porro dolor quas temporibus velit, et minus aperiam, veniam neque
+                voluptates!</p>
+        </div>
+        <!-- ctrl+d -->
+        <div id="comp" class="item">
+            <h3>comp</h3>
+            <p id="comppara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sed eaque esse
+                fugit odit animi minus aspernatur quod impedit odio minima in aliquam maiores facere ratione earum
+                voluptatem unde alias tempora! Voluptatem, laboriosam mollitia. Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Quis eos dicta cupiditate nihil reiciendis quos! Cupiditate cum quam numquam Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Tempore facere dolor temporibus mollitia voluptas
+                necessitatibus harum doloribus aliquid, et maiores ratione delectus saepe placeat veniam atque adipisci
+                qui sit iusto! Sint accusantium repellendus non. voluptatibus saepe optio fugiat porro dolor quas
+                temporibus velit, et minus aperiam, veniam neque voluptates!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sed
+                eaque esse fugit odit animi minus aspernatur quod impedit odio minima in aliquam maiores facere ratione
+                earum voluptatem unde alias tempora! Voluptatem, laboriosam mollitia.</p>
+        </div>
+        <div id="glasswala" class="item">
+            <h3>glasswala</h3>
+            <p id="glasswalapara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, sed
+                eaque esse fugit odit animi minus aspernatur quod impedit odio minima in aliquam maiores facere ratione
+                earum voluptatem unde alias tempora! Voluptatem, laboriosam mollitia.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

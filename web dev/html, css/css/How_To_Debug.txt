@@ -1,0 +1,24 @@
+simple hai
+
+sabse phele format document karo right click karke
+
+uske bad NAME dekho jo bhi diya hai. kya css or html me same name hai like agar html me class="container" hai or css me .continer{} to nahi
+
+phir dekho ki spaces to sahi hai na matlab jaha jaha extra space dikhta usko hatado kam ho sakta hai
+
+phir dekho ki kya kisi jagaha red line aa raha hai kya (text ke niche aata) usko sahi karo
+
+phir dekho ki syntax to sahi hai na like - .container{me ye wala bracket hona chahiye} par galti se (ye wala bracket de diya)
+
+phir color dekho jaha kuch alag lagta uspe dhyan do or dekho ki kya galti hai, isme zaydatar bracket lagana bhul jatte to har ek bracket ko check karo ki open kiya hai to band hai ki nahi like-
+.container{
+    me kuch hai par bracket band nahi kiya
+.box{
+    ab yaha jo likha hai vo error show karega kyoki bracket close nahi hai  container ka
+} /* ye wala box ka hai, container ka nahi */
+
+kuch work na kare to google karo jo dikat aa rahi or code ko copy paste karlo
+
+vo bhi work na kare or apko lagta ki code ekdam sahi hai to simply ek dusari file banado, purani file ka code CTRL+A karo or phir ctrl+c karo matlab copy karlo or dusari file me jake paste kardo (ctrl+v) phir dekho work kar sakta hai
+
+NOTE: ctrl+z se undu ho sakta to kuch bhi karo or work na kare to phir undu kardo

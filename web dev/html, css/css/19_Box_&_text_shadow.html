@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box and text shadow</title>
+</head>
+
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        background-color: burlywood;
+
+        /* boxshadow offset-x offset-y color */
+        /* boxshadow offset-x offset-y color blur-radius */
+        /* boxshadow offset-x offset-y color blur-radius spread-radius */
+
+        /* box-shadow: 10px 13px green; */
+
+        /* negative mey values deney sey shadow uper ki taraf chali jaygi */
+        /* box-shadow: -10px -13px green; */
+
+        /* ismey tisri value deney sey shadow ki blurness mey furk padega aur minus values sey uper ki taraf fark padega*/
+        /* box-shadow: 7px 5px 10px green; */
+
+        /* ismey color ki darkness ko handle karta hai rgb ka a */
+        /* box-shadow: -7px -5px -10px 34px rgba(71,72,172,0.5); */
+
+        /* ismey anderki taraf shadow aayegi */
+        /* box-shadow: inset 3px 5px green; */
+    }
+
+    .card h2{
+
+        /* ismey text pey shadow aati hai */
+        text-shadow: 3px 4px red;
+
+        /* ismey shadow blur hotihai 3rd value dalne sey */
+        /* text-shadow: 3px 4px 2px  white; */
+
+        /* box key jaisey hi values text  ki hogi negetive vagera */
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h2>card1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, sunt! Corrupti delectus aliquam amet id
+                culpa quasi placeat, provident molestias officia cumque ducimus necessitatibus, odio nihil illo a, ut
+                mollitia!
+            </p>
+        </div>
+        <div class="card" id="card-2">
+            <h2>this is c++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta animi, repudiandae illo autem fuga
+                consequatur possimus id, placeat, labore natus perspiciatis laudantium magnam saepe non soluta totam.
+                Omnis, nisi voluptate.
+
+            </p>
+        </div>
+        <div class="card" id="card-3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis harum repudiandae repellendus excepturi
+                voluptatibus ad illum vitae nihil architecto vel. Vitae in provident suscipit sint voluptate, ducimus
+                minus dolore laudantium?</p>
+        </div>
+    </div>
+</body>
+
+</html>
